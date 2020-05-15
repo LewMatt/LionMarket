@@ -34,7 +34,7 @@
             // lblArtSpoz
             // 
             this.lblArtSpoz.AutoSize = true;
-            this.lblArtSpoz.Location = new System.Drawing.Point(381, 85);
+            this.lblArtSpoz.Location = new System.Drawing.Point(402, 99);
             this.lblArtSpoz.Name = "lblArtSpoz";
             this.lblArtSpoz.Size = new System.Drawing.Size(101, 13);
             this.lblArtSpoz.TabIndex = 0;
