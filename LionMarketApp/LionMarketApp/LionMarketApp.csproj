@@ -60,17 +60,71 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl1Pieczywo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1Pieczywo.Designer.cs">
+      <DependentUpon>UserControl1Pieczywo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlArtSpoz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlArtSpoz.Designer.cs">
+      <DependentUpon>UserControlArtSpoz.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlKoszyk.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlKoszyk.Designer.cs">
       <DependentUpon>UserControlKoszyk.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlMieso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMieso.Designer.cs">
+      <DependentUpon>UserControlMieso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlNabial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlNabial.Designer.cs">
+      <DependentUpon>UserControlNabial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlNapoje.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlNapoje.Designer.cs">
+      <DependentUpon>UserControlNapoje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlOwoce.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlOwoce.Designer.cs">
+      <DependentUpon>UserControlOwoce.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlPromocje.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlPromocje.Designer.cs">
       <DependentUpon>UserControlPromocje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlPrzyprawy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlPrzyprawy.Designer.cs">
+      <DependentUpon>UserControlPrzyprawy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlSlodycze.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlSlodycze.Designer.cs">
+      <DependentUpon>UserControlSlodycze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlWarzywa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlWarzywa.Designer.cs">
+      <DependentUpon>UserControlWarzywa.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -87,11 +141,38 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControl1Pieczywo.resx">
+      <DependentUpon>UserControl1Pieczywo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlArtSpoz.resx">
+      <DependentUpon>UserControlArtSpoz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlKoszyk.resx">
       <DependentUpon>UserControlKoszyk.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMieso.resx">
+      <DependentUpon>UserControlMieso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlNabial.resx">
+      <DependentUpon>UserControlNabial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlNapoje.resx">
+      <DependentUpon>UserControlNapoje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlOwoce.resx">
+      <DependentUpon>UserControlOwoce.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlPromocje.resx">
       <DependentUpon>UserControlPromocje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPrzyprawy.resx">
+      <DependentUpon>UserControlPrzyprawy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSlodycze.resx">
+      <DependentUpon>UserControlSlodycze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlWarzywa.resx">
+      <DependentUpon>UserControlWarzywa.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -32,5 +32,50 @@ namespace LionMarketApp
         {
             userControlPromocje1.BringToFront();
         }
+
+        private void btnPieczywo_Click(object sender, EventArgs e)
+        {
+            userControl1Pieczywo1.BringToFront();
+        }
+
+        private void btnOwoce_Click(object sender, EventArgs e)
+        {
+            userControlOwoce1.BringToFront();
+        }
+
+        private void btnWarzywa_Click(object sender, EventArgs e)
+        {
+            userControlWarzywa1.BringToFront();
+        }
+
+        private void btnMieso_Click(object sender, EventArgs e)
+        {
+            userControlMieso1.BringToFront();
+        }
+
+        private void btnNabial_Click(object sender, EventArgs e)
+        {
+            userControlNabial1.BringToFront();
+        }
+
+        private void btnNapoje_Click(object sender, EventArgs e)
+        {
+            userControlNapoje1.BringToFront();
+        }
+
+        private void btnSlodycze_Click(object sender, EventArgs e)
+        {
+            userControlSlodycze1.BringToFront();
+        }
+
+        private void btnArtSpoz_Click(object sender, EventArgs e)
+        {
+            userControlArtSpoz1.BringToFront();
+        }
+
+        private void btnPrzyprawy_Click(object sender, EventArgs e)
+        {
+            userControlPrzyprawy1.BringToFront();
+        }
     }
 }

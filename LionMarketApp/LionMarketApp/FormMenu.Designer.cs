@@ -43,8 +43,17 @@
             this.btnArtSpoz = new System.Windows.Forms.Button();
             this.btnPrzyprawy = new System.Windows.Forms.Button();
             this.btnKoszyk = new System.Windows.Forms.Button();
-            this.userControlPromocje1 = new LionMarketApp.UserControlPromocje();
+            this.userControlArtSpoz1 = new LionMarketApp.UserControlArtSpoz();
+            this.userControlSlodycze1 = new LionMarketApp.UserControlSlodycze();
+            this.userControlNapoje1 = new LionMarketApp.UserControlNapoje();
+            this.userControlNabial1 = new LionMarketApp.UserControlNabial();
+            this.userControlMieso1 = new LionMarketApp.UserControlMieso();
+            this.userControlWarzywa1 = new LionMarketApp.UserControlWarzywa();
+            this.userControlOwoce1 = new LionMarketApp.UserControlOwoce();
+            this.userControl1Pieczywo1 = new LionMarketApp.UserControl1Pieczywo();
             this.userControlKoszyk1 = new LionMarketApp.UserControlKoszyk();
+            this.userControlPromocje1 = new LionMarketApp.UserControlPromocje();
+            this.userControlPrzyprawy1 = new LionMarketApp.UserControlPrzyprawy();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -120,6 +129,7 @@
             this.btnPieczywo.TabIndex = 1;
             this.btnPieczywo.Text = "Pieczywo";
             this.btnPieczywo.UseVisualStyleBackColor = true;
+            this.btnPieczywo.Click += new System.EventHandler(this.btnPieczywo_Click);
             // 
             // btnOwoce
             // 
@@ -131,6 +141,7 @@
             this.btnOwoce.TabIndex = 2;
             this.btnOwoce.Text = "Owoce";
             this.btnOwoce.UseVisualStyleBackColor = true;
+            this.btnOwoce.Click += new System.EventHandler(this.btnOwoce_Click);
             // 
             // btnWarzywa
             // 
@@ -142,6 +153,7 @@
             this.btnWarzywa.TabIndex = 3;
             this.btnWarzywa.Text = "Warzywa";
             this.btnWarzywa.UseVisualStyleBackColor = true;
+            this.btnWarzywa.Click += new System.EventHandler(this.btnWarzywa_Click);
             // 
             // btnMieso
             // 
@@ -153,6 +165,7 @@
             this.btnMieso.TabIndex = 4;
             this.btnMieso.Text = "Mięso/Wędliny";
             this.btnMieso.UseVisualStyleBackColor = true;
+            this.btnMieso.Click += new System.EventHandler(this.btnMieso_Click);
             // 
             // btnNabial
             // 
@@ -164,6 +177,7 @@
             this.btnNabial.TabIndex = 5;
             this.btnNabial.Text = "Nabiał";
             this.btnNabial.UseVisualStyleBackColor = true;
+            this.btnNabial.Click += new System.EventHandler(this.btnNabial_Click);
             // 
             // btnNapoje
             // 
@@ -175,6 +189,7 @@
             this.btnNapoje.TabIndex = 6;
             this.btnNapoje.Text = "Napoje";
             this.btnNapoje.UseVisualStyleBackColor = true;
+            this.btnNapoje.Click += new System.EventHandler(this.btnNapoje_Click);
             // 
             // btnSlodycze
             // 
@@ -186,6 +201,7 @@
             this.btnSlodycze.TabIndex = 7;
             this.btnSlodycze.Text = "Słodycze";
             this.btnSlodycze.UseVisualStyleBackColor = true;
+            this.btnSlodycze.Click += new System.EventHandler(this.btnSlodycze_Click);
             // 
             // btnArtSpoz
             // 
@@ -197,6 +213,7 @@
             this.btnArtSpoz.TabIndex = 8;
             this.btnArtSpoz.Text = "Art. spożywcze";
             this.btnArtSpoz.UseVisualStyleBackColor = true;
+            this.btnArtSpoz.Click += new System.EventHandler(this.btnArtSpoz_Click);
             // 
             // btnPrzyprawy
             // 
@@ -208,6 +225,7 @@
             this.btnPrzyprawy.TabIndex = 9;
             this.btnPrzyprawy.Text = "Przyprawy";
             this.btnPrzyprawy.UseVisualStyleBackColor = true;
+            this.btnPrzyprawy.Click += new System.EventHandler(this.btnPrzyprawy_Click);
             // 
             // btnKoszyk
             // 
@@ -221,12 +239,61 @@
             this.btnKoszyk.UseVisualStyleBackColor = true;
             this.btnKoszyk.Click += new System.EventHandler(this.btnKoszyk_Click);
             // 
-            // userControlPromocje1
+            // userControlArtSpoz1
             // 
-            this.userControlPromocje1.Location = new System.Drawing.Point(200, 100);
-            this.userControlPromocje1.Name = "userControlPromocje1";
-            this.userControlPromocje1.Size = new System.Drawing.Size(900, 550);
-            this.userControlPromocje1.TabIndex = 3;
+            this.userControlArtSpoz1.Location = new System.Drawing.Point(200, 100);
+            this.userControlArtSpoz1.Name = "userControlArtSpoz1";
+            this.userControlArtSpoz1.Size = new System.Drawing.Size(900, 550);
+            this.userControlArtSpoz1.TabIndex = 12;
+            // 
+            // userControlSlodycze1
+            // 
+            this.userControlSlodycze1.Location = new System.Drawing.Point(200, 100);
+            this.userControlSlodycze1.Name = "userControlSlodycze1";
+            this.userControlSlodycze1.Size = new System.Drawing.Size(900, 550);
+            this.userControlSlodycze1.TabIndex = 11;
+            // 
+            // userControlNapoje1
+            // 
+            this.userControlNapoje1.Location = new System.Drawing.Point(200, 100);
+            this.userControlNapoje1.Name = "userControlNapoje1";
+            this.userControlNapoje1.Size = new System.Drawing.Size(900, 550);
+            this.userControlNapoje1.TabIndex = 10;
+            // 
+            // userControlNabial1
+            // 
+            this.userControlNabial1.Location = new System.Drawing.Point(200, 100);
+            this.userControlNabial1.Name = "userControlNabial1";
+            this.userControlNabial1.Size = new System.Drawing.Size(900, 550);
+            this.userControlNabial1.TabIndex = 9;
+            // 
+            // userControlMieso1
+            // 
+            this.userControlMieso1.Location = new System.Drawing.Point(200, 100);
+            this.userControlMieso1.Name = "userControlMieso1";
+            this.userControlMieso1.Size = new System.Drawing.Size(900, 550);
+            this.userControlMieso1.TabIndex = 8;
+            // 
+            // userControlWarzywa1
+            // 
+            this.userControlWarzywa1.Location = new System.Drawing.Point(200, 100);
+            this.userControlWarzywa1.Name = "userControlWarzywa1";
+            this.userControlWarzywa1.Size = new System.Drawing.Size(900, 550);
+            this.userControlWarzywa1.TabIndex = 7;
+            // 
+            // userControlOwoce1
+            // 
+            this.userControlOwoce1.Location = new System.Drawing.Point(200, 100);
+            this.userControlOwoce1.Name = "userControlOwoce1";
+            this.userControlOwoce1.Size = new System.Drawing.Size(900, 550);
+            this.userControlOwoce1.TabIndex = 6;
+            // 
+            // userControl1Pieczywo1
+            // 
+            this.userControl1Pieczywo1.Location = new System.Drawing.Point(200, 100);
+            this.userControl1Pieczywo1.Name = "userControl1Pieczywo1";
+            this.userControl1Pieczywo1.Size = new System.Drawing.Size(900, 550);
+            this.userControl1Pieczywo1.TabIndex = 5;
             // 
             // userControlKoszyk1
             // 
@@ -235,11 +302,34 @@
             this.userControlKoszyk1.Size = new System.Drawing.Size(900, 550);
             this.userControlKoszyk1.TabIndex = 4;
             // 
+            // userControlPromocje1
+            // 
+            this.userControlPromocje1.Location = new System.Drawing.Point(200, 100);
+            this.userControlPromocje1.Name = "userControlPromocje1";
+            this.userControlPromocje1.Size = new System.Drawing.Size(900, 550);
+            this.userControlPromocje1.TabIndex = 3;
+            // 
+            // userControlPrzyprawy1
+            // 
+            this.userControlPrzyprawy1.Location = new System.Drawing.Point(200, 100);
+            this.userControlPrzyprawy1.Name = "userControlPrzyprawy1";
+            this.userControlPrzyprawy1.Size = new System.Drawing.Size(900, 550);
+            this.userControlPrzyprawy1.TabIndex = 13;
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 700);
+            this.Controls.Add(this.userControlPrzyprawy1);
+            this.Controls.Add(this.userControlArtSpoz1);
+            this.Controls.Add(this.userControlSlodycze1);
+            this.Controls.Add(this.userControlNapoje1);
+            this.Controls.Add(this.userControlNabial1);
+            this.Controls.Add(this.userControlMieso1);
+            this.Controls.Add(this.userControlWarzywa1);
+            this.Controls.Add(this.userControlOwoce1);
+            this.Controls.Add(this.userControl1Pieczywo1);
             this.Controls.Add(this.userControlKoszyk1);
             this.Controls.Add(this.userControlPromocje1);
             this.Controls.Add(this.panel3);
@@ -275,5 +365,14 @@
         private System.Windows.Forms.Button btnKoszyk;
         private UserControlPromocje userControlPromocje1;
         private UserControlKoszyk userControlKoszyk1;
+        private UserControl1Pieczywo userControl1Pieczywo1;
+        private UserControlOwoce userControlOwoce1;
+        private UserControlWarzywa userControlWarzywa1;
+        private UserControlMieso userControlMieso1;
+        private UserControlNabial userControlNabial1;
+        private UserControlNapoje userControlNapoje1;
+        private UserControlSlodycze userControlSlodycze1;
+        private UserControlArtSpoz userControlArtSpoz1;
+        private UserControlPrzyprawy userControlPrzyprawy1;
     }
 }
