@@ -43,6 +43,8 @@
             this.btnArtSpoz = new System.Windows.Forms.Button();
             this.btnPrzyprawy = new System.Windows.Forms.Button();
             this.btnKoszyk = new System.Windows.Forms.Button();
+            this.userControlPromocje1 = new LionMarketApp.UserControlPromocje();
+            this.userControlKoszyk1 = new LionMarketApp.UserControlKoszyk();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -106,6 +108,7 @@
             this.btnPromocje.TabIndex = 0;
             this.btnPromocje.Text = "Promocje";
             this.btnPromocje.UseVisualStyleBackColor = true;
+            this.btnPromocje.Click += new System.EventHandler(this.btnPromocje_Click);
             // 
             // btnPieczywo
             // 
@@ -216,12 +219,29 @@
             this.btnKoszyk.TabIndex = 0;
             this.btnKoszyk.Text = "Koszyk";
             this.btnKoszyk.UseVisualStyleBackColor = true;
+            this.btnKoszyk.Click += new System.EventHandler(this.btnKoszyk_Click);
+            // 
+            // userControlPromocje1
+            // 
+            this.userControlPromocje1.Location = new System.Drawing.Point(200, 100);
+            this.userControlPromocje1.Name = "userControlPromocje1";
+            this.userControlPromocje1.Size = new System.Drawing.Size(900, 550);
+            this.userControlPromocje1.TabIndex = 3;
+            // 
+            // userControlKoszyk1
+            // 
+            this.userControlKoszyk1.Location = new System.Drawing.Point(200, 100);
+            this.userControlKoszyk1.Name = "userControlKoszyk1";
+            this.userControlKoszyk1.Size = new System.Drawing.Size(900, 550);
+            this.userControlKoszyk1.TabIndex = 4;
             // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 700);
+            this.Controls.Add(this.userControlKoszyk1);
+            this.Controls.Add(this.userControlPromocje1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -253,5 +273,7 @@
         private System.Windows.Forms.Button btnPieczywo;
         private System.Windows.Forms.Button btnPromocje;
         private System.Windows.Forms.Button btnKoszyk;
+        private UserControlPromocje userControlPromocje1;
+        private UserControlKoszyk userControlKoszyk1;
     }
 }
