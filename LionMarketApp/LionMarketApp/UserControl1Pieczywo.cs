@@ -15,6 +15,50 @@ namespace LionMarketApp
         public UserControl1Pieczywo()
         {
             InitializeComponent();
+            DodajProdukty();
+            listViewPieczywo.Items[0].Selected = true;
+        }
+
+        public List<ListViewItem> wybraneProdukty = new List<ListViewItem>();
+
+        private void DodajProdukty()
+        {
+            listViewPieczywo.FullRowSelect = true;
+
+            ListViewItem prod1 = new ListViewItem("Chleb");
+            prod1.SubItems.Add("1szt");
+            prod1.SubItems.Add("5");
+
+            ListViewItem prod2 = new ListViewItem("Bułka");
+            prod2.SubItems.Add("1szt");
+            prod2.SubItems.Add("1");
+
+            ListViewItem prod3 = new ListViewItem("Bagietka");
+            prod3.SubItems.Add("1szt");
+            prod3.SubItems.Add("3");
+
+            listViewPieczywo.Items.AddRange(new ListViewItem[] { prod1, prod2, prod3 });
+        }
+
+        private void btnDodajDoKoszyka_Click(object sender, EventArgs e)
+        {
+
+            if (int.TryParse(textBoxIleSztuk.Text, out int x) == false)
+            {
+                MessageBox.Show("Niepoprawne dane.");
+            }
+            else
+            {
+                ListViewItem prod = new ListViewItem(listViewPieczywo.SelectedItems[0].Text);
+                prod.SubItems.Add(x.ToString());
+                double cena = double.Parse(listViewPieczywo.SelectedItems[0].SubItems[2].Text);
+                double cena_razem = cena * x;
+                prod.SubItems.Add(cena_razem.ToString());
+                wybraneProdukty.Add(prod);
+
+                MessageBox.Show("Dodano do koszyka.");
+
+            }
         }
     }
 }

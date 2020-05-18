@@ -25,6 +25,18 @@ namespace LionMarketApp
 
         private void btnKoszyk_Click(object sender, EventArgs e)
         {
+
+            int ind = 0;
+            foreach(ListViewItem x in userControl1Pieczywo1.wybraneProdukty)
+            {
+                userControlKoszyk1.listViewKoszyk.Items.Add(userControl1Pieczywo1.wybraneProdukty[ind]);
+                ind++;
+            }
+
+            userControl1Pieczywo1.wybraneProdukty.Clear();
+
+            
+
             userControlKoszyk1.BringToFront();
         }
 
