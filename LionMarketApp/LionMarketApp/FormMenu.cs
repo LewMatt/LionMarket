@@ -25,9 +25,7 @@ namespace LionMarketApp
 
         //koszyk
         private void btnKoszyk_Click(object sender, EventArgs e)
-        {
-           //laczna cena wszystkiego
-            double suma_cen = 0;
+        { 
 
             //pieczywo
             foreach(ListViewItem x in userControl1Pieczywo1.wybraneProdukty)
@@ -50,6 +48,20 @@ namespace LionMarketApp
             }
             userControlWarzywa1.wybraneProdukty.Clear();
 
+            //mieso
+            foreach (ListViewItem x in userControlMieso1.wybraneProdukty)
+            {
+                userControlKoszyk1.produktyKoszyk.Add(x);
+            }
+            userControlMieso1.wybraneProdukty.Clear();
+
+            //nabial
+            foreach (ListViewItem x in userControlNabial1.wybraneProdukty)
+            {
+                userControlKoszyk1.produktyKoszyk.Add(x);
+            }
+            userControlNabial1.wybraneProdukty.Clear();
+
             //wyswietlanie koszyka
             userControlKoszyk1.listViewKoszyk.Items.Clear();
 
@@ -69,6 +81,14 @@ namespace LionMarketApp
             //warzywa cena
             userControlKoszyk1.suma_koszyk += userControlWarzywa1.suma;
             userControlWarzywa1.suma = 0;
+
+            //mieso cena
+            userControlKoszyk1.suma_koszyk += userControlMieso1.suma;
+            userControlMieso1.suma = 0;
+
+            //nabial cena
+            userControlKoszyk1.suma_koszyk += userControlNabial1.suma;
+            userControlNabial1.suma = 0;
 
             //wyswietl cene
             userControlKoszyk1.lblCena.Text = userControlKoszyk1.suma_koszyk.ToString() + " zł" ;

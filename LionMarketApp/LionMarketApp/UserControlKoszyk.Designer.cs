@@ -56,6 +56,7 @@
             this.listViewKoszyk.Location = new System.Drawing.Point(188, 150);
             this.listViewKoszyk.Name = "listViewKoszyk";
             this.listViewKoszyk.Size = new System.Drawing.Size(505, 300);
+            this.listViewKoszyk.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listViewKoszyk.TabIndex = 1;
             this.listViewKoszyk.UseCompatibleStateImageBehavior = false;
             this.listViewKoszyk.View = System.Windows.Forms.View.Details;
