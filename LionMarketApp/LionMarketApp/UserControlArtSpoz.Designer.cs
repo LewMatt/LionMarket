@@ -29,7 +29,13 @@
         private void InitializeComponent()
         {
             this.lblArtSpoz = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listViewArtSpoz = new System.Windows.Forms.ListView();
+            this.hProdukty = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.hIlosc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.hCena = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblIleSztuk = new System.Windows.Forms.Label();
+            this.textBoxIleSztuk = new System.Windows.Forms.TextBox();
+            this.btnDodajDoKoszyka = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblArtSpoz
@@ -41,20 +47,69 @@
             this.lblArtSpoz.TabIndex = 0;
             this.lblArtSpoz.Text = "Artykuły spożywcze";
             // 
-            // listView1
+            // listViewArtSpoz
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(172, 205);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(121, 97);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listViewArtSpoz.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.hProdukty,
+            this.hIlosc,
+            this.hCena});
+            this.listViewArtSpoz.HideSelection = false;
+            this.listViewArtSpoz.Location = new System.Drawing.Point(82, 165);
+            this.listViewArtSpoz.Name = "listViewArtSpoz";
+            this.listViewArtSpoz.Size = new System.Drawing.Size(405, 300);
+            this.listViewArtSpoz.TabIndex = 1;
+            this.listViewArtSpoz.UseCompatibleStateImageBehavior = false;
+            this.listViewArtSpoz.View = System.Windows.Forms.View.Details;
+            // 
+            // hProdukty
+            // 
+            this.hProdukty.Text = "Produkty";
+            this.hProdukty.Width = 240;
+            // 
+            // hIlosc
+            // 
+            this.hIlosc.Text = "Ilość";
+            this.hIlosc.Width = 80;
+            // 
+            // hCena
+            // 
+            this.hCena.Text = "Cena";
+            this.hCena.Width = 80;
+            // 
+            // lblIleSztuk
+            // 
+            this.lblIleSztuk.AutoSize = true;
+            this.lblIleSztuk.Location = new System.Drawing.Point(606, 195);
+            this.lblIleSztuk.Name = "lblIleSztuk";
+            this.lblIleSztuk.Size = new System.Drawing.Size(32, 13);
+            this.lblIleSztuk.TabIndex = 2;
+            this.lblIleSztuk.Text = "Ilość:";
+            // 
+            // textBoxIleSztuk
+            // 
+            this.textBoxIleSztuk.Location = new System.Drawing.Point(702, 188);
+            this.textBoxIleSztuk.Name = "textBoxIleSztuk";
+            this.textBoxIleSztuk.Size = new System.Drawing.Size(100, 20);
+            this.textBoxIleSztuk.TabIndex = 3;
+            // 
+            // btnDodajDoKoszyka
+            // 
+            this.btnDodajDoKoszyka.Location = new System.Drawing.Point(655, 304);
+            this.btnDodajDoKoszyka.Name = "btnDodajDoKoszyka";
+            this.btnDodajDoKoszyka.Size = new System.Drawing.Size(127, 60);
+            this.btnDodajDoKoszyka.TabIndex = 4;
+            this.btnDodajDoKoszyka.Text = "Dodaj do koszyka";
+            this.btnDodajDoKoszyka.UseVisualStyleBackColor = true;
+            this.btnDodajDoKoszyka.Click += new System.EventHandler(this.btnDodajDoKoszyka_Click);
             // 
             // UserControlArtSpoz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.btnDodajDoKoszyka);
+            this.Controls.Add(this.textBoxIleSztuk);
+            this.Controls.Add(this.lblIleSztuk);
+            this.Controls.Add(this.listViewArtSpoz);
             this.Controls.Add(this.lblArtSpoz);
             this.Name = "UserControlArtSpoz";
             this.Size = new System.Drawing.Size(900, 550);
@@ -66,6 +121,12 @@
         #endregion
 
         private System.Windows.Forms.Label lblArtSpoz;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewArtSpoz;
+        private System.Windows.Forms.ColumnHeader hProdukty;
+        private System.Windows.Forms.ColumnHeader hIlosc;
+        private System.Windows.Forms.ColumnHeader hCena;
+        private System.Windows.Forms.Label lblIleSztuk;
+        private System.Windows.Forms.TextBox textBoxIleSztuk;
+        private System.Windows.Forms.Button btnDodajDoKoszyka;
     }
 }

@@ -76,6 +76,13 @@ namespace LionMarketApp
             }
             userControlSlodycze1.wybraneProdukty.Clear();
 
+            //artykuły spozywcze
+            foreach (ListViewItem x in userControlArtSpoz1.wybraneProdukty)
+            {
+                userControlKoszyk1.produktyKoszyk.Add(x);
+            }
+            userControlArtSpoz1.wybraneProdukty.Clear();
+
             //wyswietlanie koszyka
             userControlKoszyk1.listViewKoszyk.Items.Clear();
 
@@ -111,6 +118,10 @@ namespace LionMarketApp
             //slodycze cena
             userControlKoszyk1.suma_koszyk += userControlSlodycze1.suma;
             userControlSlodycze1.suma = 0;
+
+            //artykuły spozywcze cena
+            userControlKoszyk1.suma_koszyk += userControlArtSpoz1.suma;
+            userControlArtSpoz1.suma = 0;
 
             //wyswietl cene
             userControlKoszyk1.lblCena.Text = userControlKoszyk1.suma_koszyk.ToString() + " zł" ;
