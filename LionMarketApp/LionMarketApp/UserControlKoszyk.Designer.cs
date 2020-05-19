@@ -35,6 +35,7 @@
             this.hCena = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblC = new System.Windows.Forms.Label();
             this.lblCena = new System.Windows.Forms.Label();
+            this.btnWyczyscKoszyk = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblKoszyk
@@ -94,10 +95,21 @@
             this.lblCena.TabIndex = 3;
             this.lblCena.Text = "0zł";
             // 
+            // btnWyczyscKoszyk
+            // 
+            this.btnWyczyscKoszyk.Location = new System.Drawing.Point(763, 254);
+            this.btnWyczyscKoszyk.Name = "btnWyczyscKoszyk";
+            this.btnWyczyscKoszyk.Size = new System.Drawing.Size(85, 59);
+            this.btnWyczyscKoszyk.TabIndex = 4;
+            this.btnWyczyscKoszyk.Text = "Wyczyść koszyk";
+            this.btnWyczyscKoszyk.UseVisualStyleBackColor = true;
+            this.btnWyczyscKoszyk.Click += new System.EventHandler(this.btnWyczyscKoszyk_Click);
+            // 
             // UserControlKoszyk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnWyczyscKoszyk);
             this.Controls.Add(this.lblCena);
             this.Controls.Add(this.lblC);
             this.Controls.Add(this.listViewKoszyk);
@@ -118,5 +130,6 @@
         public System.Windows.Forms.ListView listViewKoszyk;
         private System.Windows.Forms.Label lblC;
         public System.Windows.Forms.Label lblCena;
+        private System.Windows.Forms.Button btnWyczyscKoszyk;
     }
 }

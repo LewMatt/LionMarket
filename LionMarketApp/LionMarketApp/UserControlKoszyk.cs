@@ -21,5 +21,12 @@ namespace LionMarketApp
 
         public double suma_koszyk = 0;
 
+        private void btnWyczyscKoszyk_Click(object sender, EventArgs e)
+        {
+            produktyKoszyk.Clear();
+            listViewKoszyk.Items.Clear();
+            suma_koszyk = 0;
+            lblCena.Text = "0zł";
+        }
     }
 }
