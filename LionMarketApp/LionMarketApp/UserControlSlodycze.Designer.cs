@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.lblSlodycze = new System.Windows.Forms.Label();
+            this.listViewSlodycze = new System.Windows.Forms.ListView();
+            this.hProdukty = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.hIlosc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.hCena = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblIleSztuk = new System.Windows.Forms.Label();
+            this.textBoxIleSztuk = new System.Windows.Forms.TextBox();
+            this.btnDodajDoKoszyka = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblSlodycze
@@ -40,10 +47,69 @@
             this.lblSlodycze.TabIndex = 0;
             this.lblSlodycze.Text = "Słodycze";
             // 
+            // listViewNapoje
+            // 
+            this.listViewSlodycze.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.hProdukty,
+            this.hIlosc,
+            this.hCena});
+            this.listViewSlodycze.HideSelection = false;
+            this.listViewSlodycze.Location = new System.Drawing.Point(83, 155);
+            this.listViewSlodycze.Name = "listViewNapoje";
+            this.listViewSlodycze.Size = new System.Drawing.Size(405, 300);
+            this.listViewSlodycze.TabIndex = 1;
+            this.listViewSlodycze.UseCompatibleStateImageBehavior = false;
+            this.listViewSlodycze.View = System.Windows.Forms.View.Details;
+            // 
+            // hProdukty
+            // 
+            this.hProdukty.Text = "Produkty";
+            this.hProdukty.Width = 240;
+            // 
+            // hIlosc
+            // 
+            this.hIlosc.Text = "Ilość";
+            this.hIlosc.Width = 80;
+            // 
+            // hCena
+            // 
+            this.hCena.Text = "Cena";
+            this.hCena.Width = 80;
+            // 
+            // lblIleSztuk
+            // 
+            this.lblIleSztuk.AutoSize = true;
+            this.lblIleSztuk.Location = new System.Drawing.Point(594, 179);
+            this.lblIleSztuk.Name = "lblIleSztuk";
+            this.lblIleSztuk.Size = new System.Drawing.Size(32, 13);
+            this.lblIleSztuk.TabIndex = 2;
+            this.lblIleSztuk.Text = "Ilość:";
+            // 
+            // textBoxIleSztuk
+            // 
+            this.textBoxIleSztuk.Location = new System.Drawing.Point(728, 171);
+            this.textBoxIleSztuk.Name = "textBoxIleSztuk";
+            this.textBoxIleSztuk.Size = new System.Drawing.Size(100, 20);
+            this.textBoxIleSztuk.TabIndex = 3;
+            // 
+            // btnDodajDoKoszyka
+            // 
+            this.btnDodajDoKoszyka.Location = new System.Drawing.Point(647, 295);
+            this.btnDodajDoKoszyka.Name = "btnDodajDoKoszyka";
+            this.btnDodajDoKoszyka.Size = new System.Drawing.Size(122, 58);
+            this.btnDodajDoKoszyka.TabIndex = 4;
+            this.btnDodajDoKoszyka.Text = "Dodaj do koszyka";
+            this.btnDodajDoKoszyka.UseVisualStyleBackColor = true;
+            this.btnDodajDoKoszyka.Click += new System.EventHandler(this.btnDodajDoKoszyka_Click);
+            // 
             // UserControlSlodycze
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnDodajDoKoszyka);
+            this.Controls.Add(this.textBoxIleSztuk);
+            this.Controls.Add(this.lblIleSztuk);
+            this.Controls.Add(this.listViewSlodycze);
             this.Controls.Add(this.lblSlodycze);
             this.Name = "UserControlSlodycze";
             this.Size = new System.Drawing.Size(900, 550);
@@ -55,5 +121,12 @@
         #endregion
 
         private System.Windows.Forms.Label lblSlodycze;
+        private System.Windows.Forms.ListView listViewSlodycze;
+        private System.Windows.Forms.ColumnHeader hProdukty;
+        private System.Windows.Forms.ColumnHeader hIlosc;
+        private System.Windows.Forms.ColumnHeader hCena;
+        private System.Windows.Forms.Label lblIleSztuk;
+        private System.Windows.Forms.TextBox textBoxIleSztuk;
+        private System.Windows.Forms.Button btnDodajDoKoszyka;
     }
 }

@@ -62,6 +62,20 @@ namespace LionMarketApp
             }
             userControlNabial1.wybraneProdukty.Clear();
 
+            //napoje
+            foreach (ListViewItem x in userControlNapoje1.wybraneProdukty)
+            {
+                userControlKoszyk1.produktyKoszyk.Add(x);
+            }
+            userControlNapoje1.wybraneProdukty.Clear();
+
+            //slodycze
+            foreach (ListViewItem x in userControlSlodycze1.wybraneProdukty)
+            {
+                userControlKoszyk1.produktyKoszyk.Add(x);
+            }
+            userControlSlodycze1.wybraneProdukty.Clear();
+
             //wyswietlanie koszyka
             userControlKoszyk1.listViewKoszyk.Items.Clear();
 
@@ -89,6 +103,14 @@ namespace LionMarketApp
             //nabial cena
             userControlKoszyk1.suma_koszyk += userControlNabial1.suma;
             userControlNabial1.suma = 0;
+
+            //napoje cena
+            userControlKoszyk1.suma_koszyk += userControlNapoje1.suma;
+            userControlNapoje1.suma = 0;
+
+            //slodycze cena
+            userControlKoszyk1.suma_koszyk += userControlSlodycze1.suma;
+            userControlSlodycze1.suma = 0;
 
             //wyswietl cene
             userControlKoszyk1.lblCena.Text = userControlKoszyk1.suma_koszyk.ToString() + " zł" ;

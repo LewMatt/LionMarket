@@ -63,7 +63,7 @@
             // 
             // hProdukt
             // 
-            this.hProdukt.Text = "Produkt";
+            this.hProdukt.Text = "Produkty";
             this.hProdukt.Width = 240;
             // 
             // hIlosc
