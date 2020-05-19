@@ -19,11 +19,11 @@ namespace LionMarketApp
             listViewPieczywo.Items[0].Selected = true;
         }
 
-        public List<ListViewItem> wybraneProdukty = new List<ListViewItem>();
+        public List<ListViewItem> wybraneProdukty = new List<ListViewItem>();//lista produktów
 
-        public double suma = 0;
+        public double suma = 0;//suma wybranych produktów
 
-        private void DodajProdukty()
+        private void DodajProdukty()//dodanie produktów do bazy
         {
             listViewPieczywo.FullRowSelect = true;
 
@@ -42,7 +42,7 @@ namespace LionMarketApp
             listViewPieczywo.Items.AddRange(new ListViewItem[] { prod1, prod2, prod3 });
         }
 
-        private void btnDodajDoKoszyka_Click(object sender, EventArgs e)
+        private void btnDodajDoKoszyka_Click(object sender, EventArgs e)//przycisk
         {
 
             if (int.TryParse(textBoxIleSztuk.Text, out int x) == false)

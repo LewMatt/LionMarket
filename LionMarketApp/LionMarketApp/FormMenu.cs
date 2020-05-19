@@ -23,27 +23,45 @@ namespace LionMarketApp
             System.Windows.Forms.Application.Exit();
         }
 
+        //koszyk
         private void btnKoszyk_Click(object sender, EventArgs e)
         {
-           
+           //laczna cena wszystkiego
             double suma_cen = 0;
 
+            //pieczywo
             foreach(ListViewItem x in userControl1Pieczywo1.wybraneProdukty)
             {
                 userControlKoszyk1.produktyKoszyk.Add(x);
             }
             userControl1Pieczywo1.wybraneProdukty.Clear();
 
+            //owoce
+            foreach (ListViewItem x in userControlOwoce1.wybraneProdukty)
+            {
+                userControlKoszyk1.produktyKoszyk.Add(x);
+            }
+            userControlOwoce1.wybraneProdukty.Clear();
+
+
+
+            //wyswietlanie koszyka
             userControlKoszyk1.listViewKoszyk.Items.Clear();
 
-            foreach(ListViewItem x in userControlKoszyk1.produktyKoszyk)
+            foreach (ListViewItem x in userControlKoszyk1.produktyKoszyk)
             {
                 userControlKoszyk1.listViewKoszyk.Items.Add(x);
             }
 
+            //pieczywo cena
             userControlKoszyk1.suma_koszyk += userControl1Pieczywo1.suma;
             userControl1Pieczywo1.suma = 0;
 
+            //owoce cena
+            userControlKoszyk1.suma_koszyk += userControlOwoce1.suma;
+            userControlOwoce1.suma = 0;
+
+            //wyswietl cene
             userControlKoszyk1.lblCena.Text = userControlKoszyk1.suma_koszyk.ToString() + " zł" ;
 
             userControlKoszyk1.BringToFront();
