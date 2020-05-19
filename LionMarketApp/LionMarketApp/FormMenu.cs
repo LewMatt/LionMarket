@@ -83,6 +83,13 @@ namespace LionMarketApp
             }
             userControlArtSpoz1.wybraneProdukty.Clear();
 
+            //przyprawy
+            foreach (ListViewItem x in userControlPrzyprawy1.wybraneProdukty)
+            {
+                userControlKoszyk1.produktyKoszyk.Add(x);
+            }
+            userControlPrzyprawy1.wybraneProdukty.Clear();
+
             //wyswietlanie koszyka
             userControlKoszyk1.listViewKoszyk.Items.Clear();
 
@@ -122,6 +129,10 @@ namespace LionMarketApp
             //artykuły spozywcze cena
             userControlKoszyk1.suma_koszyk += userControlArtSpoz1.suma;
             userControlArtSpoz1.suma = 0;
+
+            //przyprawy cena
+            userControlKoszyk1.suma_koszyk += userControlPrzyprawy1.suma;
+            userControlPrzyprawy1.suma = 0;
 
             //wyswietl cene
             userControlKoszyk1.lblCena.Text = userControlKoszyk1.suma_koszyk.ToString() + " zł" ;
