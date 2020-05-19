@@ -43,7 +43,12 @@ namespace LionMarketApp
             }
             userControlOwoce1.wybraneProdukty.Clear();
 
-
+            //warzywa
+            foreach (ListViewItem x in userControlWarzywa1.wybraneProdukty)
+            {
+                userControlKoszyk1.produktyKoszyk.Add(x);
+            }
+            userControlWarzywa1.wybraneProdukty.Clear();
 
             //wyswietlanie koszyka
             userControlKoszyk1.listViewKoszyk.Items.Clear();
@@ -60,6 +65,10 @@ namespace LionMarketApp
             //owoce cena
             userControlKoszyk1.suma_koszyk += userControlOwoce1.suma;
             userControlOwoce1.suma = 0;
+
+            //warzywa cena
+            userControlKoszyk1.suma_koszyk += userControlWarzywa1.suma;
+            userControlWarzywa1.suma = 0;
 
             //wyswietl cene
             userControlKoszyk1.lblCena.Text = userControlKoszyk1.suma_koszyk.ToString() + " zł" ;

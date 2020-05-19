@@ -54,7 +54,7 @@
             this.hIlosc,
             this.hCena});
             this.listViewOwoce.HideSelection = false;
-            this.listViewOwoce.Location = new System.Drawing.Point(100, 174);
+            this.listViewOwoce.Location = new System.Drawing.Point(100, 170);
             this.listViewOwoce.Name = "listViewOwoce";
             this.listViewOwoce.Size = new System.Drawing.Size(405, 300);
             this.listViewOwoce.TabIndex = 1;
