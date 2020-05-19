@@ -15,7 +15,12 @@ namespace LionMarketApp
         public UserControlKoszyk()
         {
             InitializeComponent();
+
         }
-        
+
+        public List<ListViewItem> produktyKoszyk = new List<ListViewItem>();
+
+        public double suma_koszyk = 0;
+
     }
 }

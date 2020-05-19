@@ -25,17 +25,26 @@ namespace LionMarketApp
 
         private void btnKoszyk_Click(object sender, EventArgs e)
         {
+           
+            double suma_cen = 0;
 
-            int ind = 0;
             foreach(ListViewItem x in userControl1Pieczywo1.wybraneProdukty)
             {
-                userControlKoszyk1.listViewKoszyk.Items.Add(userControl1Pieczywo1.wybraneProdukty[ind]);
-                ind++;
+                userControlKoszyk1.produktyKoszyk.Add(x);
             }
-
             userControl1Pieczywo1.wybraneProdukty.Clear();
 
-            
+            userControlKoszyk1.listViewKoszyk.Items.Clear();
+
+            foreach(ListViewItem x in userControlKoszyk1.produktyKoszyk)
+            {
+                userControlKoszyk1.listViewKoszyk.Items.Add(x);
+            }
+
+            userControlKoszyk1.suma_koszyk += userControl1Pieczywo1.suma;
+            userControl1Pieczywo1.suma = 0;
+
+            userControlKoszyk1.lblCena.Text = userControlKoszyk1.suma_koszyk.ToString() + " zł" ;
 
             userControlKoszyk1.BringToFront();
         }

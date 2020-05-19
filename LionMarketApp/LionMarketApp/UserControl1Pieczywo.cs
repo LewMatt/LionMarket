@@ -21,6 +21,8 @@ namespace LionMarketApp
 
         public List<ListViewItem> wybraneProdukty = new List<ListViewItem>();
 
+        public double suma = 0;
+
         private void DodajProdukty()
         {
             listViewPieczywo.FullRowSelect = true;
@@ -35,7 +37,7 @@ namespace LionMarketApp
 
             ListViewItem prod3 = new ListViewItem("Bagietka");
             prod3.SubItems.Add("1szt");
-            prod3.SubItems.Add("3");
+            prod3.SubItems.Add("2,50");
 
             listViewPieczywo.Items.AddRange(new ListViewItem[] { prod1, prod2, prod3 });
         }
@@ -47,6 +49,10 @@ namespace LionMarketApp
             {
                 MessageBox.Show("Niepoprawne dane.");
             }
+            else if(int.Parse(textBoxIleSztuk.Text) <= 0)
+            {
+                MessageBox.Show("Ilość musi być większa niż 0");
+            }
             else
             {
                 ListViewItem prod = new ListViewItem(listViewPieczywo.SelectedItems[0].Text);
@@ -55,8 +61,11 @@ namespace LionMarketApp
                 double cena_razem = cena * x;
                 prod.SubItems.Add(cena_razem.ToString());
                 wybraneProdukty.Add(prod);
+                suma = suma + cena_razem;
 
                 MessageBox.Show("Dodano do koszyka.");
+
+                textBoxIleSztuk.Text = "";
 
             }
         }
