@@ -44,11 +44,11 @@ namespace LionMarketApp
 
         private void btnDodajDoKoszyka_Click(object sender, EventArgs e)//przycisk
         {
-            if (int.TryParse(textBoxIleSztuk.Text, out int x) == false)
+            if (double.TryParse(textBoxIleSztuk.Text, out double x) == false)
             {
                 MessageBox.Show("Niepoprawne dane.");
             }
-            else if (int.Parse(textBoxIleSztuk.Text) <= 0)
+            else if (double.Parse(textBoxIleSztuk.Text) <= 0)
             {
                 MessageBox.Show("Ilość musi być większa niż 0");
             }

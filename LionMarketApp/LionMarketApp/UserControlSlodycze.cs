@@ -31,9 +31,9 @@ namespace LionMarketApp
             prod1.SubItems.Add("1szt");
             prod1.SubItems.Add("3");
 
-            ListViewItem prod2 = new ListViewItem("Cukierki");
-            prod2.SubItems.Add("1kg");
-            prod2.SubItems.Add("20");
+            ListViewItem prod2 = new ListViewItem("Ciastka");
+            prod2.SubItems.Add("1op");
+            prod2.SubItems.Add("5");
 
             ListViewItem prod3 = new ListViewItem("Batonik");
             prod3.SubItems.Add("1szt");

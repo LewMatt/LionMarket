@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.lblArtSpoz = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // lblArtSpoz
@@ -40,10 +41,20 @@
             this.lblArtSpoz.TabIndex = 0;
             this.lblArtSpoz.Text = "Artykuły spożywcze";
             // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(172, 205);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(121, 97);
+            this.listView1.TabIndex = 1;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // UserControlArtSpoz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.lblArtSpoz);
             this.Name = "UserControlArtSpoz";
             this.Size = new System.Drawing.Size(900, 550);
@@ -55,5 +66,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblArtSpoz;
+        private System.Windows.Forms.ListView listView1;
     }
 }
