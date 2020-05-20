@@ -30,22 +30,24 @@
         {
             this.lblMieso = new System.Windows.Forms.Label();
             this.listViewMieso = new System.Windows.Forms.ListView();
-            this.lblIleSztuk = new System.Windows.Forms.Label();
-            this.textBoxIleSztuk = new System.Windows.Forms.TextBox();
-            this.btnDodajDoKoszyka = new System.Windows.Forms.Button();
             this.hProdukty = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hIlosc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hCena = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblIleSztuk = new System.Windows.Forms.Label();
+            this.textBoxIleSztuk = new System.Windows.Forms.TextBox();
+            this.btnDodajDoKoszyka = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblMieso
             // 
-            this.lblMieso.AutoSize = true;
-            this.lblMieso.Location = new System.Drawing.Point(381, 89);
+            this.lblMieso.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblMieso.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblMieso.Location = new System.Drawing.Point(0, 0);
             this.lblMieso.Name = "lblMieso";
-            this.lblMieso.Size = new System.Drawing.Size(78, 13);
+            this.lblMieso.Size = new System.Drawing.Size(900, 100);
             this.lblMieso.TabIndex = 0;
             this.lblMieso.Text = "Mięso/Wędliny";
+            this.lblMieso.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // listViewMieso
             // 
@@ -54,38 +56,12 @@
             this.hIlosc,
             this.hCena});
             this.listViewMieso.HideSelection = false;
-            this.listViewMieso.Location = new System.Drawing.Point(126, 151);
+            this.listViewMieso.Location = new System.Drawing.Point(100, 150);
             this.listViewMieso.Name = "listViewMieso";
             this.listViewMieso.Size = new System.Drawing.Size(405, 300);
             this.listViewMieso.TabIndex = 1;
             this.listViewMieso.UseCompatibleStateImageBehavior = false;
             this.listViewMieso.View = System.Windows.Forms.View.Details;
-            // 
-            // lblIleSztuk
-            // 
-            this.lblIleSztuk.AutoSize = true;
-            this.lblIleSztuk.Location = new System.Drawing.Point(613, 230);
-            this.lblIleSztuk.Name = "lblIleSztuk";
-            this.lblIleSztuk.Size = new System.Drawing.Size(32, 13);
-            this.lblIleSztuk.TabIndex = 2;
-            this.lblIleSztuk.Text = "Ilość:";
-            // 
-            // textBoxIleSztuk
-            // 
-            this.textBoxIleSztuk.Location = new System.Drawing.Point(723, 230);
-            this.textBoxIleSztuk.Name = "textBoxIleSztuk";
-            this.textBoxIleSztuk.Size = new System.Drawing.Size(100, 20);
-            this.textBoxIleSztuk.TabIndex = 3;
-            // 
-            // btnDodajDoKoszyka
-            // 
-            this.btnDodajDoKoszyka.Location = new System.Drawing.Point(672, 345);
-            this.btnDodajDoKoszyka.Name = "btnDodajDoKoszyka";
-            this.btnDodajDoKoszyka.Size = new System.Drawing.Size(122, 44);
-            this.btnDodajDoKoszyka.TabIndex = 4;
-            this.btnDodajDoKoszyka.Text = "Dodaj do koszyka";
-            this.btnDodajDoKoszyka.UseVisualStyleBackColor = true;
-            this.btnDodajDoKoszyka.Click += new System.EventHandler(this.btnDodajDoKoszyka_Click);
             // 
             // hProdukty
             // 
@@ -99,8 +75,37 @@
             // 
             // hCena
             // 
-            this.hCena.Text = "Cena";
+            this.hCena.Text = "Cena(zł)";
             this.hCena.Width = 80;
+            // 
+            // lblIleSztuk
+            // 
+            this.lblIleSztuk.AutoSize = true;
+            this.lblIleSztuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblIleSztuk.Location = new System.Drawing.Point(600, 230);
+            this.lblIleSztuk.Name = "lblIleSztuk";
+            this.lblIleSztuk.Size = new System.Drawing.Size(62, 25);
+            this.lblIleSztuk.TabIndex = 2;
+            this.lblIleSztuk.Text = "Ilość:";
+            // 
+            // textBoxIleSztuk
+            // 
+            this.textBoxIleSztuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxIleSztuk.Location = new System.Drawing.Point(700, 227);
+            this.textBoxIleSztuk.Name = "textBoxIleSztuk";
+            this.textBoxIleSztuk.Size = new System.Drawing.Size(100, 31);
+            this.textBoxIleSztuk.TabIndex = 3;
+            // 
+            // btnDodajDoKoszyka
+            // 
+            this.btnDodajDoKoszyka.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDodajDoKoszyka.Location = new System.Drawing.Point(600, 320);
+            this.btnDodajDoKoszyka.Name = "btnDodajDoKoszyka";
+            this.btnDodajDoKoszyka.Size = new System.Drawing.Size(200, 50);
+            this.btnDodajDoKoszyka.TabIndex = 4;
+            this.btnDodajDoKoszyka.Text = "Dodaj do koszyka";
+            this.btnDodajDoKoszyka.UseVisualStyleBackColor = true;
+            this.btnDodajDoKoszyka.Click += new System.EventHandler(this.btnDodajDoKoszyka_Click);
             // 
             // UserControlMieso
             // 

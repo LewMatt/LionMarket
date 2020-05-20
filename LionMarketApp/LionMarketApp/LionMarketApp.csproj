@@ -140,6 +140,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserControl1Pieczywo.resx">
       <DependentUpon>UserControl1Pieczywo.cs</DependentUpon>
@@ -186,6 +187,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lionlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lionmarketlogomale.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lionmarketlogomniejsze.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lionmarketlogoH300.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

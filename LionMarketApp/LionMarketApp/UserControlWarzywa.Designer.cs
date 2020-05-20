@@ -40,12 +40,14 @@
             // 
             // lblWarzywa
             // 
-            this.lblWarzywa.AutoSize = true;
-            this.lblWarzywa.Location = new System.Drawing.Point(413, 100);
+            this.lblWarzywa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblWarzywa.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblWarzywa.Location = new System.Drawing.Point(0, 0);
             this.lblWarzywa.Name = "lblWarzywa";
-            this.lblWarzywa.Size = new System.Drawing.Size(51, 13);
+            this.lblWarzywa.Size = new System.Drawing.Size(900, 100);
             this.lblWarzywa.TabIndex = 0;
             this.lblWarzywa.Text = "Warzywa";
+            this.lblWarzywa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // listViewWarzywa
             // 
@@ -54,7 +56,7 @@
             this.hIlosc,
             this.hCena});
             this.listViewWarzywa.HideSelection = false;
-            this.listViewWarzywa.Location = new System.Drawing.Point(106, 156);
+            this.listViewWarzywa.Location = new System.Drawing.Point(100, 150);
             this.listViewWarzywa.Name = "listViewWarzywa";
             this.listViewWarzywa.Size = new System.Drawing.Size(405, 300);
             this.listViewWarzywa.TabIndex = 1;
@@ -79,24 +81,27 @@
             // lblIleSztuk
             // 
             this.lblIleSztuk.AutoSize = true;
-            this.lblIleSztuk.Location = new System.Drawing.Point(586, 230);
+            this.lblIleSztuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblIleSztuk.Location = new System.Drawing.Point(600, 230);
             this.lblIleSztuk.Name = "lblIleSztuk";
-            this.lblIleSztuk.Size = new System.Drawing.Size(32, 13);
+            this.lblIleSztuk.Size = new System.Drawing.Size(62, 25);
             this.lblIleSztuk.TabIndex = 2;
             this.lblIleSztuk.Text = "Ilość:";
             // 
             // textBoxIleSztuk
             // 
-            this.textBoxIleSztuk.Location = new System.Drawing.Point(690, 223);
+            this.textBoxIleSztuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxIleSztuk.Location = new System.Drawing.Point(700, 227);
             this.textBoxIleSztuk.Name = "textBoxIleSztuk";
-            this.textBoxIleSztuk.Size = new System.Drawing.Size(100, 20);
+            this.textBoxIleSztuk.Size = new System.Drawing.Size(100, 31);
             this.textBoxIleSztuk.TabIndex = 3;
             // 
             // btnDodajDoKoszyka
             // 
-            this.btnDodajDoKoszyka.Location = new System.Drawing.Point(642, 345);
+            this.btnDodajDoKoszyka.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDodajDoKoszyka.Location = new System.Drawing.Point(600, 320);
             this.btnDodajDoKoszyka.Name = "btnDodajDoKoszyka";
-            this.btnDodajDoKoszyka.Size = new System.Drawing.Size(119, 42);
+            this.btnDodajDoKoszyka.Size = new System.Drawing.Size(200, 50);
             this.btnDodajDoKoszyka.TabIndex = 4;
             this.btnDodajDoKoszyka.Text = "Dodaj do koszyka";
             this.btnDodajDoKoszyka.UseVisualStyleBackColor = true;

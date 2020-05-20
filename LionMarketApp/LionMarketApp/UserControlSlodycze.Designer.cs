@@ -40,22 +40,24 @@
             // 
             // lblSlodycze
             // 
-            this.lblSlodycze.AutoSize = true;
-            this.lblSlodycze.Location = new System.Drawing.Point(424, 64);
+            this.lblSlodycze.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblSlodycze.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblSlodycze.Location = new System.Drawing.Point(0, 0);
             this.lblSlodycze.Name = "lblSlodycze";
-            this.lblSlodycze.Size = new System.Drawing.Size(52, 13);
+            this.lblSlodycze.Size = new System.Drawing.Size(900, 100);
             this.lblSlodycze.TabIndex = 0;
             this.lblSlodycze.Text = "Słodycze";
+            this.lblSlodycze.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // listViewNapoje
+            // listViewSlodycze
             // 
             this.listViewSlodycze.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.hProdukty,
             this.hIlosc,
             this.hCena});
             this.listViewSlodycze.HideSelection = false;
-            this.listViewSlodycze.Location = new System.Drawing.Point(83, 155);
-            this.listViewSlodycze.Name = "listViewNapoje";
+            this.listViewSlodycze.Location = new System.Drawing.Point(100, 150);
+            this.listViewSlodycze.Name = "listViewSlodycze";
             this.listViewSlodycze.Size = new System.Drawing.Size(405, 300);
             this.listViewSlodycze.TabIndex = 1;
             this.listViewSlodycze.UseCompatibleStateImageBehavior = false;
@@ -73,30 +75,33 @@
             // 
             // hCena
             // 
-            this.hCena.Text = "Cena";
+            this.hCena.Text = "Cena(zł)";
             this.hCena.Width = 80;
             // 
             // lblIleSztuk
             // 
             this.lblIleSztuk.AutoSize = true;
-            this.lblIleSztuk.Location = new System.Drawing.Point(594, 179);
+            this.lblIleSztuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblIleSztuk.Location = new System.Drawing.Point(600, 230);
             this.lblIleSztuk.Name = "lblIleSztuk";
-            this.lblIleSztuk.Size = new System.Drawing.Size(32, 13);
+            this.lblIleSztuk.Size = new System.Drawing.Size(62, 25);
             this.lblIleSztuk.TabIndex = 2;
             this.lblIleSztuk.Text = "Ilość:";
             // 
             // textBoxIleSztuk
             // 
-            this.textBoxIleSztuk.Location = new System.Drawing.Point(728, 171);
+            this.textBoxIleSztuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxIleSztuk.Location = new System.Drawing.Point(700, 227);
             this.textBoxIleSztuk.Name = "textBoxIleSztuk";
-            this.textBoxIleSztuk.Size = new System.Drawing.Size(100, 20);
+            this.textBoxIleSztuk.Size = new System.Drawing.Size(100, 31);
             this.textBoxIleSztuk.TabIndex = 3;
             // 
             // btnDodajDoKoszyka
             // 
-            this.btnDodajDoKoszyka.Location = new System.Drawing.Point(647, 295);
+            this.btnDodajDoKoszyka.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDodajDoKoszyka.Location = new System.Drawing.Point(600, 320);
             this.btnDodajDoKoszyka.Name = "btnDodajDoKoszyka";
-            this.btnDodajDoKoszyka.Size = new System.Drawing.Size(122, 58);
+            this.btnDodajDoKoszyka.Size = new System.Drawing.Size(200, 50);
             this.btnDodajDoKoszyka.TabIndex = 4;
             this.btnDodajDoKoszyka.Text = "Dodaj do koszyka";
             this.btnDodajDoKoszyka.UseVisualStyleBackColor = true;

@@ -40,12 +40,14 @@
             // 
             // lblArtSpoz
             // 
-            this.lblArtSpoz.AutoSize = true;
-            this.lblArtSpoz.Location = new System.Drawing.Point(402, 99);
+            this.lblArtSpoz.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblArtSpoz.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblArtSpoz.Location = new System.Drawing.Point(0, 0);
             this.lblArtSpoz.Name = "lblArtSpoz";
-            this.lblArtSpoz.Size = new System.Drawing.Size(101, 13);
+            this.lblArtSpoz.Size = new System.Drawing.Size(900, 100);
             this.lblArtSpoz.TabIndex = 0;
             this.lblArtSpoz.Text = "Artykuły spożywcze";
+            this.lblArtSpoz.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // listViewArtSpoz
             // 
@@ -54,7 +56,7 @@
             this.hIlosc,
             this.hCena});
             this.listViewArtSpoz.HideSelection = false;
-            this.listViewArtSpoz.Location = new System.Drawing.Point(82, 165);
+            this.listViewArtSpoz.Location = new System.Drawing.Point(100, 150);
             this.listViewArtSpoz.Name = "listViewArtSpoz";
             this.listViewArtSpoz.Size = new System.Drawing.Size(405, 300);
             this.listViewArtSpoz.TabIndex = 1;
@@ -73,30 +75,33 @@
             // 
             // hCena
             // 
-            this.hCena.Text = "Cena";
+            this.hCena.Text = "Cena(zł)";
             this.hCena.Width = 80;
             // 
             // lblIleSztuk
             // 
             this.lblIleSztuk.AutoSize = true;
-            this.lblIleSztuk.Location = new System.Drawing.Point(606, 195);
+            this.lblIleSztuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblIleSztuk.Location = new System.Drawing.Point(600, 230);
             this.lblIleSztuk.Name = "lblIleSztuk";
-            this.lblIleSztuk.Size = new System.Drawing.Size(32, 13);
+            this.lblIleSztuk.Size = new System.Drawing.Size(62, 25);
             this.lblIleSztuk.TabIndex = 2;
             this.lblIleSztuk.Text = "Ilość:";
             // 
             // textBoxIleSztuk
             // 
-            this.textBoxIleSztuk.Location = new System.Drawing.Point(702, 188);
+            this.textBoxIleSztuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxIleSztuk.Location = new System.Drawing.Point(700, 227);
             this.textBoxIleSztuk.Name = "textBoxIleSztuk";
-            this.textBoxIleSztuk.Size = new System.Drawing.Size(100, 20);
+            this.textBoxIleSztuk.Size = new System.Drawing.Size(100, 31);
             this.textBoxIleSztuk.TabIndex = 3;
             // 
             // btnDodajDoKoszyka
             // 
-            this.btnDodajDoKoszyka.Location = new System.Drawing.Point(655, 304);
+            this.btnDodajDoKoszyka.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDodajDoKoszyka.Location = new System.Drawing.Point(600, 320);
             this.btnDodajDoKoszyka.Name = "btnDodajDoKoszyka";
-            this.btnDodajDoKoszyka.Size = new System.Drawing.Size(127, 60);
+            this.btnDodajDoKoszyka.Size = new System.Drawing.Size(200, 50);
             this.btnDodajDoKoszyka.TabIndex = 4;
             this.btnDodajDoKoszyka.Text = "Dodaj do koszyka";
             this.btnDodajDoKoszyka.UseVisualStyleBackColor = true;

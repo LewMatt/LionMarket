@@ -31,15 +31,18 @@
             this.btnOpen = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblLionMarket = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOpen
             // 
-            this.btnOpen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnOpen.Location = new System.Drawing.Point(425, 496);
+            this.btnOpen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnOpen.Location = new System.Drawing.Point(420, 500);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(250, 50);
+            this.btnOpen.Size = new System.Drawing.Size(260, 60);
             this.btnOpen.TabIndex = 0;
             this.btnOpen.Text = "Przejdź do sklepu";
             this.btnOpen.UseVisualStyleBackColor = true;
@@ -66,11 +69,35 @@
             this.panel1.Size = new System.Drawing.Size(1100, 50);
             this.panel1.TabIndex = 2;
             // 
+            // lblLionMarket
+            // 
+            this.lblLionMarket.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblLionMarket.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblLionMarket.Location = new System.Drawing.Point(0, 0);
+            this.lblLionMarket.Name = "lblLionMarket";
+            this.lblLionMarket.Size = new System.Drawing.Size(1100, 150);
+            this.lblLionMarket.TabIndex = 3;
+            this.lblLionMarket.Text = "Lion Market";
+            this.lblLionMarket.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox1.Image = global::LionMarketApp.Properties.Resources.lionmarketlogoH300;
+            this.pictureBox1.Location = new System.Drawing.Point(410, 153);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(280, 300);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 700);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lblLionMarket);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnOpen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -78,6 +105,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -87,6 +115,8 @@
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblLionMarket;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

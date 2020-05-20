@@ -40,12 +40,14 @@
             // 
             // lblNabial
             // 
-            this.lblNabial.AutoSize = true;
-            this.lblNabial.Location = new System.Drawing.Point(453, 97);
+            this.lblNabial.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblNabial.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblNabial.Location = new System.Drawing.Point(0, 0);
             this.lblNabial.Name = "lblNabial";
-            this.lblNabial.Size = new System.Drawing.Size(39, 13);
+            this.lblNabial.Size = new System.Drawing.Size(900, 100);
             this.lblNabial.TabIndex = 0;
             this.lblNabial.Text = "Nabiał";
+            this.lblNabial.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // listViewNabial
             // 
@@ -54,7 +56,7 @@
             this.hIlosc,
             this.hCena});
             this.listViewNabial.HideSelection = false;
-            this.listViewNabial.Location = new System.Drawing.Point(97, 158);
+            this.listViewNabial.Location = new System.Drawing.Point(100, 150);
             this.listViewNabial.Name = "listViewNabial";
             this.listViewNabial.Size = new System.Drawing.Size(405, 300);
             this.listViewNabial.TabIndex = 1;
@@ -73,30 +75,33 @@
             // 
             // hCena
             // 
-            this.hCena.Text = "Cena";
+            this.hCena.Text = "Cena(zł)";
             this.hCena.Width = 80;
             // 
             // lblIleSztuk
             // 
             this.lblIleSztuk.AutoSize = true;
-            this.lblIleSztuk.Location = new System.Drawing.Point(599, 188);
+            this.lblIleSztuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblIleSztuk.Location = new System.Drawing.Point(600, 230);
             this.lblIleSztuk.Name = "lblIleSztuk";
-            this.lblIleSztuk.Size = new System.Drawing.Size(32, 13);
+            this.lblIleSztuk.Size = new System.Drawing.Size(62, 25);
             this.lblIleSztuk.TabIndex = 2;
             this.lblIleSztuk.Text = "Ilość:";
             // 
             // textBoxIleSztuk
             // 
-            this.textBoxIleSztuk.Location = new System.Drawing.Point(707, 188);
+            this.textBoxIleSztuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxIleSztuk.Location = new System.Drawing.Point(700, 227);
             this.textBoxIleSztuk.Name = "textBoxIleSztuk";
-            this.textBoxIleSztuk.Size = new System.Drawing.Size(100, 20);
+            this.textBoxIleSztuk.Size = new System.Drawing.Size(100, 31);
             this.textBoxIleSztuk.TabIndex = 3;
             // 
             // btnDodajDoKoszyka
             // 
-            this.btnDodajDoKoszyka.Location = new System.Drawing.Point(645, 290);
+            this.btnDodajDoKoszyka.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDodajDoKoszyka.Location = new System.Drawing.Point(600, 320);
             this.btnDodajDoKoszyka.Name = "btnDodajDoKoszyka";
-            this.btnDodajDoKoszyka.Size = new System.Drawing.Size(121, 35);
+            this.btnDodajDoKoszyka.Size = new System.Drawing.Size(200, 50);
             this.btnDodajDoKoszyka.TabIndex = 4;
             this.btnDodajDoKoszyka.Text = "Dodaj do koszyka";
             this.btnDodajDoKoszyka.UseVisualStyleBackColor = true;
