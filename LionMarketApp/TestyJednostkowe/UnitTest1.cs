@@ -10,9 +10,8 @@ namespace TestyJednostkowe
         [TestMethod]
         public void TestMethod1()
         {
-            FormMenu fMenu = new FormMenu();
 
-            
+            FormMenu fMenu = new FormMenu();
 
         }
     }
