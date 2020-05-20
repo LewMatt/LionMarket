@@ -43,8 +43,9 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnKoszyk = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblMenu = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblLionM = new System.Windows.Forms.Label();
             this.userControlPrzyprawy1 = new LionMarketApp.UserControlPrzyprawy();
             this.userControlArtSpoz1 = new LionMarketApp.UserControlArtSpoz();
             this.userControlSlodycze1 = new LionMarketApp.UserControlSlodycze();
@@ -225,6 +226,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.lblLionM);
             this.panel2.Controls.Add(this.btnExit);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(200, 650);
@@ -271,15 +273,6 @@
             this.btnKoszyk.UseVisualStyleBackColor = false;
             this.btnKoszyk.Click += new System.EventHandler(this.btnKoszyk_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::LionMarketApp.Properties.Resources.lionmarketlogoH200;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 500);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(187, 200);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
             // lblMenu
             // 
             this.lblMenu.AutoSize = true;
@@ -290,6 +283,26 @@
             this.lblMenu.Size = new System.Drawing.Size(336, 42);
             this.lblMenu.TabIndex = 1;
             this.lblMenu.Text = "Udanych zakupów!";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LionMarketApp.Properties.Resources.lionmarketlogoH200;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 500);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(187, 200);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblLionM
+            // 
+            this.lblLionM.AutoSize = true;
+            this.lblLionM.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblLionM.ForeColor = System.Drawing.Color.Black;
+            this.lblLionM.Location = new System.Drawing.Point(379, 17);
+            this.lblLionM.Name = "lblLionM";
+            this.lblLionM.Size = new System.Drawing.Size(107, 24);
+            this.lblLionM.TabIndex = 1;
+            this.lblLionM.Text = "Lion Market";
             // 
             // userControlPrzyprawy1
             // 
@@ -404,6 +417,7 @@
             this.Text = "FormMenu";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -441,5 +455,6 @@
         private UserControlPrzyprawy userControlPrzyprawy1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblMenu;
+        private System.Windows.Forms.Label lblLionM;
     }
 }

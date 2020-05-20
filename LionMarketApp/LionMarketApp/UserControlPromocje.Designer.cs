@@ -179,6 +179,7 @@
             this.btnOwoceProm.TabIndex = 2;
             this.btnOwoceProm.Text = "Przejdź";
             this.btnOwoceProm.UseVisualStyleBackColor = false;
+            this.btnOwoceProm.Click += new System.EventHandler(this.btnOwoceProm_Click);
             // 
             // btnWarzywaProm
             // 
@@ -191,6 +192,7 @@
             this.btnWarzywaProm.TabIndex = 3;
             this.btnWarzywaProm.Text = "Przejdź";
             this.btnWarzywaProm.UseVisualStyleBackColor = false;
+            this.btnWarzywaProm.Click += new System.EventHandler(this.btnWarzywaProm_Click);
             // 
             // panel4
             // 
@@ -232,6 +234,7 @@
             this.btnNapojeProm.TabIndex = 4;
             this.btnNapojeProm.Text = "Przejdź";
             this.btnNapojeProm.UseVisualStyleBackColor = false;
+            this.btnNapojeProm.Click += new System.EventHandler(this.btnNapojeProm_Click);
             // 
             // btnSlodyczeProm
             // 
@@ -244,6 +247,7 @@
             this.btnSlodyczeProm.TabIndex = 5;
             this.btnSlodyczeProm.Text = "Przejdź";
             this.btnSlodyczeProm.UseVisualStyleBackColor = false;
+            this.btnSlodyczeProm.Click += new System.EventHandler(this.btnSlodyczeProm_Click);
             // 
             // UserControlPromocje
             // 

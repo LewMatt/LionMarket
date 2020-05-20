@@ -56,7 +56,7 @@
             this.hIlosc,
             this.hCena});
             this.listViewKoszyk.HideSelection = false;
-            this.listViewKoszyk.Location = new System.Drawing.Point(197, 142);
+            this.listViewKoszyk.Location = new System.Drawing.Point(160, 142);
             this.listViewKoszyk.Name = "listViewKoszyk";
             this.listViewKoszyk.Size = new System.Drawing.Size(505, 300);
             this.listViewKoszyk.Sorting = System.Windows.Forms.SortOrder.Ascending;
@@ -104,7 +104,7 @@
             this.btnWyczyscKoszyk.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnWyczyscKoszyk.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnWyczyscKoszyk.ForeColor = System.Drawing.Color.White;
-            this.btnWyczyscKoszyk.Location = new System.Drawing.Point(740, 260);
+            this.btnWyczyscKoszyk.Location = new System.Drawing.Point(720, 260);
             this.btnWyczyscKoszyk.Name = "btnWyczyscKoszyk";
             this.btnWyczyscKoszyk.Size = new System.Drawing.Size(120, 70);
             this.btnWyczyscKoszyk.TabIndex = 4;
