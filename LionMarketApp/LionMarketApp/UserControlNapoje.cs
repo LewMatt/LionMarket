@@ -37,7 +37,7 @@ namespace LionMarketApp
 
             ListViewItem prod3 = new ListViewItem("Sok pomarańczowy");
             prod3.SubItems.Add("1litr");
-            prod3.SubItems.Add("4");
+            prod3.SubItems.Add("3");
 
             listViewNapoje.Items.AddRange(new ListViewItem[] { prod1, prod2, prod3 });
         }

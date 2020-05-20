@@ -29,7 +29,7 @@ namespace LionMarketApp
 
             ListViewItem prod1 = new ListViewItem("Czekolada");
             prod1.SubItems.Add("1szt");
-            prod1.SubItems.Add("3");
+            prod1.SubItems.Add("2,50");
 
             ListViewItem prod2 = new ListViewItem("Ciastka");
             prod2.SubItems.Add("1op");
@@ -37,7 +37,7 @@ namespace LionMarketApp
 
             ListViewItem prod3 = new ListViewItem("Batonik");
             prod3.SubItems.Add("1szt");
-            prod3.SubItems.Add("2,50");
+            prod3.SubItems.Add("2");
 
             listViewSlodycze.Items.AddRange(new ListViewItem[] { prod1, prod2, prod3 });
         }

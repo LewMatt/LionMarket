@@ -121,13 +121,28 @@
   <data name="lionmarketlogomale" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lionmarketlogomale.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lionlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lionlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="marchewkiW225" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marchewkiW225.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sokPomW225" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sokPomW225.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lionmarketlogoH200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lionmarketlogoH200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lionmarketlogomniejsze" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lionmarketlogomniejsze.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bananyW225" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bananyW225.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lionlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lionlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="lionmarketlogoH300" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lionmarketlogoH300.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="czekoladaW225" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\czekoladaW225.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

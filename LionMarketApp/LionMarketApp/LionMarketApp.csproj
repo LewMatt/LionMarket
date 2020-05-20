@@ -200,5 +200,20 @@
   <ItemGroup>
     <None Include="Resources\lionmarketlogoH300.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lionmarketlogoH200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bananyW225.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marchewkiW225.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sokPomW225.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\czekoladaW225.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

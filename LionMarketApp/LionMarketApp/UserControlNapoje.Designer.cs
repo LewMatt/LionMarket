@@ -98,13 +98,15 @@
             // 
             // btnDodajDoKoszyka
             // 
+            this.btnDodajDoKoszyka.BackColor = System.Drawing.Color.LimeGreen;
             this.btnDodajDoKoszyka.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDodajDoKoszyka.ForeColor = System.Drawing.Color.White;
             this.btnDodajDoKoszyka.Location = new System.Drawing.Point(600, 320);
             this.btnDodajDoKoszyka.Name = "btnDodajDoKoszyka";
             this.btnDodajDoKoszyka.Size = new System.Drawing.Size(200, 50);
             this.btnDodajDoKoszyka.TabIndex = 4;
             this.btnDodajDoKoszyka.Text = "Dodaj do koszyka";
-            this.btnDodajDoKoszyka.UseVisualStyleBackColor = true;
+            this.btnDodajDoKoszyka.UseVisualStyleBackColor = false;
             this.btnDodajDoKoszyka.Click += new System.EventHandler(this.btnDodajDoKoszyka_Click);
             // 
             // UserControlNapoje

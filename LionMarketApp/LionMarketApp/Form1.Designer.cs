@@ -39,25 +39,29 @@
             // 
             // btnOpen
             // 
+            this.btnOpen.BackColor = System.Drawing.Color.LimeGreen;
             this.btnOpen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnOpen.ForeColor = System.Drawing.Color.White;
             this.btnOpen.Location = new System.Drawing.Point(420, 500);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(260, 60);
             this.btnOpen.TabIndex = 0;
             this.btnOpen.Text = "Przejdź do sklepu";
-            this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.UseVisualStyleBackColor = false;
             this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Location = new System.Drawing.Point(1000, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(100, 50);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Wyjście";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // panel1
@@ -73,6 +77,7 @@
             // 
             this.lblLionMarket.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblLionMarket.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblLionMarket.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.lblLionMarket.Location = new System.Drawing.Point(0, 0);
             this.lblLionMarket.Name = "lblLionMarket";
             this.lblLionMarket.Size = new System.Drawing.Size(1100, 150);

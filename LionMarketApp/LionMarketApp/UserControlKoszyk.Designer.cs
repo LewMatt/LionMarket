@@ -40,12 +40,14 @@
             // 
             // lblKoszyk
             // 
-            this.lblKoszyk.AutoSize = true;
-            this.lblKoszyk.Location = new System.Drawing.Point(408, 87);
+            this.lblKoszyk.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblKoszyk.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblKoszyk.Location = new System.Drawing.Point(0, 0);
             this.lblKoszyk.Name = "lblKoszyk";
-            this.lblKoszyk.Size = new System.Drawing.Size(41, 13);
+            this.lblKoszyk.Size = new System.Drawing.Size(900, 100);
             this.lblKoszyk.TabIndex = 0;
             this.lblKoszyk.Text = "Koszyk";
+            this.lblKoszyk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // listViewKoszyk
             // 
@@ -54,7 +56,7 @@
             this.hIlosc,
             this.hCena});
             this.listViewKoszyk.HideSelection = false;
-            this.listViewKoszyk.Location = new System.Drawing.Point(188, 150);
+            this.listViewKoszyk.Location = new System.Drawing.Point(197, 142);
             this.listViewKoszyk.Name = "listViewKoszyk";
             this.listViewKoszyk.Size = new System.Drawing.Size(505, 300);
             this.listViewKoszyk.Sorting = System.Windows.Forms.SortOrder.Ascending;
@@ -80,35 +82,41 @@
             // lblC
             // 
             this.lblC.AutoSize = true;
-            this.lblC.Location = new System.Drawing.Point(379, 495);
+            this.lblC.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblC.Location = new System.Drawing.Point(320, 480);
             this.lblC.Name = "lblC";
-            this.lblC.Size = new System.Drawing.Size(76, 13);
+            this.lblC.Size = new System.Drawing.Size(149, 25);
             this.lblC.TabIndex = 2;
             this.lblC.Text = "Cena łącznie: ";
             // 
             // lblCena
             // 
             this.lblCena.AutoSize = true;
-            this.lblCena.Location = new System.Drawing.Point(546, 495);
+            this.lblCena.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCena.Location = new System.Drawing.Point(540, 480);
             this.lblCena.Name = "lblCena";
-            this.lblCena.Size = new System.Drawing.Size(22, 13);
+            this.lblCena.Size = new System.Drawing.Size(40, 25);
             this.lblCena.TabIndex = 3;
             this.lblCena.Text = "0zł";
             // 
             // btnWyczyscKoszyk
             // 
-            this.btnWyczyscKoszyk.Location = new System.Drawing.Point(763, 254);
+            this.btnWyczyscKoszyk.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnWyczyscKoszyk.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnWyczyscKoszyk.ForeColor = System.Drawing.Color.White;
+            this.btnWyczyscKoszyk.Location = new System.Drawing.Point(740, 260);
             this.btnWyczyscKoszyk.Name = "btnWyczyscKoszyk";
-            this.btnWyczyscKoszyk.Size = new System.Drawing.Size(85, 59);
+            this.btnWyczyscKoszyk.Size = new System.Drawing.Size(120, 70);
             this.btnWyczyscKoszyk.TabIndex = 4;
             this.btnWyczyscKoszyk.Text = "Wyczyść koszyk";
-            this.btnWyczyscKoszyk.UseVisualStyleBackColor = true;
+            this.btnWyczyscKoszyk.UseVisualStyleBackColor = false;
             this.btnWyczyscKoszyk.Click += new System.EventHandler(this.btnWyczyscKoszyk_Click);
             // 
             // UserControlKoszyk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnWyczyscKoszyk);
             this.Controls.Add(this.lblCena);
             this.Controls.Add(this.lblC);

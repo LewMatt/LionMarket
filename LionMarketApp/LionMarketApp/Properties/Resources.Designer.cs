@@ -63,9 +63,39 @@ namespace LionMarketApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bananyW225 {
+            get {
+                object obj = ResourceManager.GetObject("bananyW225", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap czekoladaW225 {
+            get {
+                object obj = ResourceManager.GetObject("czekoladaW225", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lionlogo {
             get {
                 object obj = ResourceManager.GetObject("lionlogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lionmarketlogoH200 {
+            get {
+                object obj = ResourceManager.GetObject("lionmarketlogoH200", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +126,26 @@ namespace LionMarketApp.Properties {
         internal static System.Drawing.Bitmap lionmarketlogomniejsze {
             get {
                 object obj = ResourceManager.GetObject("lionmarketlogomniejsze", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap marchewkiW225 {
+            get {
+                object obj = ResourceManager.GetObject("marchewkiW225", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sokPomW225 {
+            get {
+                object obj = ResourceManager.GetObject("sokPomW225", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
