@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LionMarketApp", "LionMarketApp\LionMarketApp.csproj", "{E00AF13F-7854-4167-9403-968F353C9818}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestyJednostkowe", "TestyJednostkowe\TestyJednostkowe.csproj", "{9AFE2487-596E-4C53-8DCE-94E55887F0BE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E00AF13F-7854-4167-9403-968F353C9818} = {E00AF13F-7854-4167-9403-968F353C9818}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{E00AF13F-7854-4167-9403-968F353C9818}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E00AF13F-7854-4167-9403-968F353C9818}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E00AF13F-7854-4167-9403-968F353C9818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AFE2487-596E-4C53-8DCE-94E55887F0BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AFE2487-596E-4C53-8DCE-94E55887F0BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AFE2487-596E-4C53-8DCE-94E55887F0BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AFE2487-596E-4C53-8DCE-94E55887F0BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
