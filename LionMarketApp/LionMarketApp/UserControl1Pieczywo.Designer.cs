@@ -133,8 +133,8 @@
         private System.Windows.Forms.ColumnHeader hIlosc;
         private System.Windows.Forms.ColumnHeader hCena;
         private System.Windows.Forms.Label lblIleSztuk;
-        private System.Windows.Forms.TextBox textBoxIleSztuk;
-        private System.Windows.Forms.Button btnDodajDoKoszyka;
         public System.Windows.Forms.ListView listViewPieczywo;
+        public System.Windows.Forms.TextBox textBoxIleSztuk;
+        public System.Windows.Forms.Button btnDodajDoKoszyka;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows;
 
 namespace LionMarketApp
 {
@@ -23,7 +24,7 @@ namespace LionMarketApp
 
         public double suma = 0;//suma wybranych produktów
 
-        private void DodajProdukty()//dodanie produktów do bazy
+        public void DodajProdukty()//dodanie produktów do bazy
         {
             listViewNabial.FullRowSelect = true;
 
@@ -42,7 +43,7 @@ namespace LionMarketApp
             listViewNabial.Items.AddRange(new ListViewItem[] { prod1, prod2, prod3 });
         }
 
-        private void btnDodajDoKoszyka_Click(object sender, EventArgs e)//przycisk
+        public void btnDodajDoKoszyka_Click(object sender, EventArgs e)//przycisk
         {
             if (double.TryParse(textBoxIleSztuk.Text, out double x) == false)
             {
@@ -73,6 +74,11 @@ namespace LionMarketApp
                 textBoxIleSztuk.Text = "";
 
             }
+        }
+
+        public void dodajDoKoszyka()
+        {
+            btnDodajDoKoszyka_Click(null, RoutedEventArgs.Empty);
         }
     }
 }

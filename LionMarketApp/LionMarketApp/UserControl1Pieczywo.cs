@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows;
 
 namespace LionMarketApp
 {
@@ -23,7 +24,7 @@ namespace LionMarketApp
 
         public double suma = 0;//suma wybranych produktów
 
-        private void DodajProdukty()//dodanie produktów do bazy
+        public void DodajProdukty()//dodanie produktów do bazy
         {
             listViewPieczywo.FullRowSelect = true;
 
@@ -42,7 +43,9 @@ namespace LionMarketApp
             listViewPieczywo.Items.AddRange(new ListViewItem[] { prod1, prod2, prod3 });
         }
 
-        private void btnDodajDoKoszyka_Click(object sender, EventArgs e)//przycisk
+        
+
+        public void btnDodajDoKoszyka_Click(object sender, EventArgs e)//przycisk
         {
 
             if (int.TryParse(textBoxIleSztuk.Text, out int x) == false)
@@ -55,6 +58,7 @@ namespace LionMarketApp
             }
             else
             {
+                
                 ListViewItem prod = new ListViewItem(listViewPieczywo.SelectedItems[0].Text);
                 prod.SubItems.Add(x.ToString());
                 double cena = double.Parse(listViewPieczywo.SelectedItems[0].SubItems[2].Text);
@@ -68,6 +72,11 @@ namespace LionMarketApp
                 textBoxIleSztuk.Text = "";
 
             }
+        }
+
+        public void dodajDoKoszyka()
+        {
+            btnDodajDoKoszyka_Click(null, RoutedEventArgs.Empty);
         }
     }
 }
