@@ -26,7 +26,6 @@ namespace TestyJednostkowe
             pieczObj.textBoxIleSztuk.Text = ilosc.ToString();
 
             //dodanie produktów do koszyka
-
             pieczObj.dodajDoKoszyka();
 
             //suma oczekiwana
@@ -58,6 +57,29 @@ namespace TestyJednostkowe
             double suma_o = cena * ilosc;
 
             Assert.AreEqual(suma_o, nabObj.suma, 0.001, "Nie działa");
+        }
+
+        [TestMethod]
+        public void TestMethod3()
+        {
+            UserControlSlodycze slodObj = new UserControlSlodycze();
+
+            slodObj.listViewSlodycze.CreateControl();
+
+            double ilosc = 27;
+
+            int x = 1;
+
+            for(int i = 0;i<ilosc;i++)
+            {
+                slodObj.textBoxIleSztuk.Text = x.ToString();
+                slodObj.dodajDoKoszyka();
+            }
+
+            int ilosc_prod_dodanych = slodObj.wybraneProdukty.Count;
+
+            Assert.AreEqual(ilosc, ilosc_prod_dodanych, 0.001, "Nie działa");
+
         }
     }
 
